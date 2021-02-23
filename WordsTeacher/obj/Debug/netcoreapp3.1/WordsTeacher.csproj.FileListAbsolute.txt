@@ -1,0 +1,13 @@
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.exe
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.deps.json
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.json
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.dev.json
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.dll
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.pdb
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csprojAssemblyReference.cache
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfo.cs
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.dll
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.pdb
+C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.genruntimeconfig.cache
