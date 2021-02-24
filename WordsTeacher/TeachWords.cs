@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using System.Linq;
 
 //TODO: Добавить возможность по окончанию списка cлов посмотреть ошибки. +
-//TODO: Добавить вывод слов по пачками.
+//TODO: Добавить вывод слов по пачками. -
 //TODO: Добавить вывод слов значение ключ.
-//TODO: Выво слова на русском, ввод на английском.
-//TODO: Все лова рандомно.
+//TODO: Вывод слова на русском, ввод на английском.
+//TODO: Все слова рандомно.
 
 namespace WordsTeacher
 {
@@ -43,6 +43,7 @@ namespace WordsTeacher
                 {
                     wordsInBlok += words;
                     cycelContinueFrom = i;
+                    repeat = RepeatBlok;
                 }
 
                 i = cycelContinueFrom;
