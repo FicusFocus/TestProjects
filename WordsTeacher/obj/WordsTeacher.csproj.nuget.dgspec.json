@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj": {}
+    "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj": {
+    "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj",
+        "projectUniqueName": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj",
         "projectName": "WordsTeacher",
-        "projectPath": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\obj\\",
+        "projectPath": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

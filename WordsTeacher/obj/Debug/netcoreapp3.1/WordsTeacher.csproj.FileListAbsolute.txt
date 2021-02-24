@@ -11,3 +11,16 @@ C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netco
 C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.dll
 C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.pdb
 C:\Users\user\Desktop\Не Корзина\myProject\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.genruntimeconfig.cache
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.exe
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.deps.json
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.json
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.dev.json
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.dll
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.pdb
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csprojAssemblyReference.cache
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfoInputs.cache
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfo.cs
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csproj.CoreCompileInputs.cache
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.dll
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.pdb
+D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.genruntimeconfig.cache

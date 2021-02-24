@@ -1,10 +1,6 @@
 ﻿using System;
-using System.IO;
-using System.Text;
-using System.Collections.Generic;
-using System.Linq;
 
-// Файл читается, создается словарь.
+// TODO: Добавить возможность по окончанию списка члов посмотреть ошибки.
 
 namespace WordsTeacher
 {
@@ -14,43 +10,53 @@ namespace WordsTeacher
         {
             string wordKeysFile = "words/chapter1Keys.txt";
             string wordValueFile = "words/chapter1Value.txt";
-        }
-    }
+            bool isWork = true;
 
-    class TeachWords
-    {
-        private Dictionary<string, string> _newWords = new Dictionary<string, string>();
+            TeachWords teachWords = new TeachWords(wordKeysFile, wordValueFile);
 
-        public void StartLearning()
-        {
-
-
-            bool WordsEnd = false;
-
-            while(WordsEnd = false)
+            while (isWork)
             {
-                
-            }
-        }
+                Console.WriteLine("Функционал:\n" +
+                                  "1 - начать ввод слов.\n" +
+                                  "2 - Вывести словарь на экран.\n" +
+                                  "3 - Начать обучение.\n" +
+                                  "exit - выйти из программы");
 
-        private void CreateDictionary(string wordKeysFile, string wordValueFile)
-        {
-            for (int i = 0; i < File.ReadAllLines(wordKeysFile).Length; i++)
-            {
-                _newWords.Add(File.ReadLines(wordKeysFile).Skip(i).First(), File.ReadLines(wordValueFile).Skip(i).First());
-            }
-        }
+                switch (Console.ReadLine())
+                {
+                    case "1":
+                        bool end = false;
 
-        public void AddWord(string wordKeysFile, string wordValueFile, string key, string value)
-        {
-            using(var sw = new StreamWriter(wordKeysFile, true))
-            {
-                sw.WriteLine(key);
-            }
+                        while (end == false)
+                        {
+                            switch (Console.ReadLine())
+                            {
+                                case "exit":
+                                    end = true;
+                                    break;
 
-            using (var sw = new StreamWriter(wordValueFile, true))
-            {
-                sw.WriteLine(value);
+                                default:
+                                    teachWords.AddWord(wordKeysFile, wordValueFile);
+                                    break;
+                            }
+                        }
+                        break;
+
+                    case "2":
+                        teachWords.ShowDictionary(wordKeysFile, wordValueFile);
+                        break;
+
+                    case "3":
+                        teachWords.StartLearning(wordKeysFile, wordValueFile);
+                        break;
+
+                    case "exit":
+                        isWork = false;
+                        break;
+                }
+
+                Console.ReadLine();
+                Console.Clear();
             }
         }
     }

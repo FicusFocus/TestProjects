@@ -8,20 +8,25 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\user\\.nuget\\packages\\": {}
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj",
+      "projectUniqueName": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj",
       "projectName": "WordsTeacher",
-      "projectPath": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\WordsTeacher.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Не Корзина\\myProject\\WordsTeacher\\obj\\",
+      "projectPath": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\WordsTeacher.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "D:\\Програмирование\\Visual_Studio_Projects\\TestProjects\\TestProjects\\WordsTeacher\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
