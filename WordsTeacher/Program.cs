@@ -1,6 +1,10 @@
 ﻿using System;
 
-// TODO: Добавить возможность по окончанию списка члов посмотреть ошибки.
+//TODO: Добавить возможность по окончанию списка cлов посмотреть ошибки. +
+//TODO: Добавить вывод слов по пачками. + 
+//TODO: Добавить вывод слов значение ключ.
+//TODO: Выво слова на русском, ввод на английском.
+//TODO: Все лова рандомно.
 
 namespace WordsTeacher
 {
@@ -17,9 +21,10 @@ namespace WordsTeacher
             while (isWork)
             {
                 Console.WriteLine("Функционал:\n" +
-                                  "1 - начать ввод слов.\n" +
+                                  "1 - Добавить новые слова.\n" +
                                   "2 - Вывести словарь на экран.\n" +
-                                  "3 - Начать обучение.\n" +
+                                  "3 - Вывод всех слов по очереди.\n" +
+                                  "4 - Вывод слов блоками\n" +
                                   "exit - выйти из программы");
 
                 switch (Console.ReadLine())
@@ -36,18 +41,26 @@ namespace WordsTeacher
                                     break;
 
                                 default:
-                                    teachWords.AddWord(wordKeysFile, wordValueFile);
+                                    teachWords.AddWord();
                                     break;
                             }
                         }
                         break;
 
                     case "2":
-                        teachWords.ShowDictionary(wordKeysFile, wordValueFile);
+                        teachWords.ShowDictionary();
                         break;
 
                     case "3":
-                        teachWords.StartLearning(wordKeysFile, wordValueFile);
+                        teachWords.LearnAllWord_Key_Value();
+                        break;
+
+                    case "4":
+                        Console.Write("Сколько слов в блоке должно быть: ");
+                        int wordsInBlok = Convert.ToInt32(Console.ReadLine());
+                        Console.Write("\nСколько раз повторять блок: ");
+                        int RepeatBlok = Convert.ToInt32(Console.ReadLine());
+                        teachWords.LearnBloks(wordsInBlok, RepeatBlok);
                         break;
 
                     case "exit":

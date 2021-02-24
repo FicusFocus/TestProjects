@@ -3,89 +3,184 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
+//TODO: Добавить возможность по окончанию списка cлов посмотреть ошибки. +
+//TODO: Добавить вывод слов по пачками.
+//TODO: Добавить вывод слов значение ключ.
+//TODO: Выво слова на русском, ввод на английском.
+//TODO: Все лова рандомно.
+
 namespace WordsTeacher
 {
     class TeachWords
     {
+        public string WordKeysFile { get; set; }
+        public string WordValueFile { get; set; }
+        private int _warriantsAmount = 5;
+        private int _userChoise;
+        private int _mistakes = 0;
         private List<Word> _words = new List<Word>();
+        private Dictionary<string, string> _mistakesList = new Dictionary<string, string>();
+        private Dictionary<int, int> _wordsForChoise = new Dictionary<int, int>();
 
         public TeachWords(string wordKeysFile, string wordValueFile)
         {
-            CreateWordsList(wordKeysFile, wordValueFile);
+            WordKeysFile = wordKeysFile;
+            WordValueFile = wordValueFile;
+            CreateWordsList();
         }
 
-        public void ShowDictionary(string wordKeysFile, string wordValueFile)
+        public void LearnBloks(int wordsInBlok, int RepeatBlok)
         {
-            for (int i = 0; i < File.ReadAllLines(wordKeysFile).Length; i++)
+            Random rand = new Random();
+            int i = 0;
+            int cycelContinueFrom = 0;
+            int words = wordsInBlok;
+            int repeat = RepeatBlok;
+
+            while (_words.Count > 0)
             {
-                Console.WriteLine($"{File.ReadLines(wordKeysFile).Skip(i).First()} - {File.ReadLines(wordValueFile).Skip(i).First()}");
+                if (repeat == 0)
+                {
+                    wordsInBlok += words;
+                    cycelContinueFrom = i;
+                }
+
+                i = cycelContinueFrom;
+                for (; i < wordsInBlok; i++)
+                {
+                    int randomPosition = rand.Next(0, _warriantsAmount);
+
+                    Console.WriteLine($"ошибок - {_mistakes}/{_words.Count}");
+                    Console.WriteLine($"{_words[i].Key}: ");
+
+                    for (int j = 0; j < _warriantsAmount; j++)
+                    {
+                        if (j == randomPosition)
+                        {
+                            Console.WriteLine($"{j}) {_words[i].Value}");
+                            _wordsForChoise.Add(j, i);
+                        }
+                        else
+                        {
+                            int randomWord = rand.Next(0, _words.Count);
+                            Console.WriteLine($"{j}) {_words[randomWord].Value}");
+                            _wordsForChoise.Add(j, randomWord);
+                        }
+                    }
+
+                    _userChoise = Convert.ToInt32(Console.ReadLine());
+                    if (_words[_wordsForChoise[_userChoise]].Key == _words[i].Key)
+                    {
+                        Console.WriteLine("все верно.");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Неверно. {_words[_wordsForChoise[_userChoise]].Value} - это {_words[_wordsForChoise[_userChoise]].Key}");
+                        _mistakesList.Add(_words[_wordsForChoise[_userChoise]].Key, _words[_wordsForChoise[_userChoise]].Value);
+                        _mistakes++;
+                    }
+
+                    Console.ReadLine();
+                    Console.Clear();
+
+                    _wordsForChoise.Clear();
+                }
+
+                Console.WriteLine("Список ошибок:");
+
+                foreach (var mistake in _mistakesList)
+                {
+                    Console.WriteLine($"{mistake.Key} - {mistake.Value}");
+                }
+
+                repeat--;
+                _mistakesList.Clear();
+                _mistakes = 0;
             }
         }
 
-        public void StartLearning(string wordKeysFile, string wordValueFile)
+        public void LearnAllWord_Key_Value()
         {
             Random rand = new Random();
-            int userChoise;
-            int mistakes = 0;
-            int warriantsAmount = 5;
+            
 
             for (int i = 0; i < _words.Count; i++)
             {
-                Dictionary<int, int> wordsForChoise = new Dictionary<int, int>();
-                int randomPosition = rand.Next(0, warriantsAmount);
-                Console.WriteLine($"ошибок - {mistakes}/{_words.Count}");
+                int randomPosition = rand.Next(0, _warriantsAmount);
+
+                Console.WriteLine($"ошибок - {_mistakes}/{_words.Count}");
                 Console.WriteLine($"{_words[i].Key}: ");
 
-                for (int j = 0; j < warriantsAmount; j++)
+                for (int j = 0; j < _warriantsAmount; j++)
                 {
                     if (j == randomPosition)
                     {
                         Console.WriteLine($"{j}) {_words[i].Value}");
-                        wordsForChoise.Add(j, i);
+                        _wordsForChoise.Add(j, i);
                     }
                     else
                     {
                         int randomWord = rand.Next(0, _words.Count);
                         Console.WriteLine($"{j}) {_words[randomWord].Value}");
-                        wordsForChoise.Add(j, randomWord);
+                        _wordsForChoise.Add(j, randomWord);
                     }
                 }
 
-                userChoise = Convert.ToInt32(Console.ReadLine());
-                if(_words[wordsForChoise[userChoise]].Key == _words[i].Key)
+                _userChoise = Convert.ToInt32(Console.ReadLine());
+                if(_words[_wordsForChoise[_userChoise]].Key == _words[i].Key)
                 {
                     Console.WriteLine("все верно.");
                 }
                 else
                 {
-                    Console.WriteLine($"Неверно. {_words[wordsForChoise[userChoise]].Value} - это {_words[wordsForChoise[userChoise]].Key}");
-                    mistakes++;
+                    Console.WriteLine($"Неверно. {_words[_wordsForChoise[_userChoise]].Value} - это {_words[_wordsForChoise[_userChoise]].Key}");
+                    _mistakesList.Add(_words[_wordsForChoise[_userChoise]].Key, _words[_wordsForChoise[_userChoise]].Value);
+                    _mistakes++;
                 }
 
                 Console.ReadLine();
                 Console.Clear();
+                _wordsForChoise.Clear();
+            }
+
+            Console.WriteLine("Список ошибок:");
+
+            foreach (var mistake in _mistakesList)
+            {
+                Console.WriteLine($"{mistake.Key} - {mistake.Value}");
+            }
+
+            _mistakesList.Clear();
+            _mistakes = 0;
+        }
+
+        public void ShowDictionary()
+        {
+            for (int i = 0; i < File.ReadAllLines(WordKeysFile).Length; i++)
+            {
+                Console.WriteLine($"{File.ReadLines(WordKeysFile).Skip(i).First()} - {File.ReadLines(WordValueFile).Skip(i).First()}");
             }
         }
 
-        public void CreateWordsList(string wordKeysFile, string wordValueFile)
+        public void CreateWordsList()
         {
-            for (int i = 0; i < File.ReadAllLines(wordKeysFile).Length; i++)
-                _words.Add(new Word(File.ReadLines(wordKeysFile).Skip(i).First(), File.ReadLines(wordValueFile).Skip(i).First()));
+            for (int i = 0; i < File.ReadAllLines(WordKeysFile).Length; i++)
+                _words.Add(new Word(File.ReadLines(WordKeysFile).Skip(i).First(), File.ReadLines(WordValueFile).Skip(i).First()));
         }
 
-        public void AddWord(string wordKeysFile, string wordValueFile)
+        public void AddWord()
         {
             Console.WriteLine("key - ");
             string key = Console.ReadLine();
             Console.WriteLine("Value - ");
             string value = Console.ReadLine();
 
-            using (var sw = new StreamWriter(wordKeysFile, true))
+            using (var sw = new StreamWriter(WordKeysFile, true))
             {
                 sw.WriteLine(key);
             }
 
-            using (var sw = new StreamWriter(wordValueFile, true))
+            using (var sw = new StreamWriter(WordValueFile, true))
             {
                 sw.WriteLine(value);
             }

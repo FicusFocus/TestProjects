@@ -24,3 +24,16 @@ D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjec
 D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.dll
 D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.pdb
 D:\Програмирование\Visual_Studio_Projects\TestProjects\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.genruntimeconfig.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.exe
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.deps.json
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.json
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.runtimeconfig.dev.json
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.dll
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\bin\Debug\netcoreapp3.1\WordsTeacher.pdb
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csprojAssemblyReference.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfoInputs.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.AssemblyInfo.cs
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.csproj.CoreCompileInputs.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.dll
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.pdb
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\WordsTeacher\obj\Debug\netcoreapp3.1\WordsTeacher.genruntimeconfig.cache
