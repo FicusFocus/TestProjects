@@ -1,13 +1,5 @@
 ﻿using System;
 
-
-//TODO: добавить проверку на валидность ввода с клавы(просто enter, или буква вместо цифры).
-//TODO: Добавить возможность по окончанию списка cлов посмотреть ошибки. +
-//TODO: Добавить вывод слов по пачками. +
-//TODO: Добавить вывод слов значение ключ.
-//TODO: Вывод слова на русском, ввод на английском.
-//TODO: Все слова рандомно.
-
 namespace WordsTeacher
 {
     class Program
@@ -27,6 +19,7 @@ namespace WordsTeacher
                                   "2 - Вывести словарь на экран.\n" +
                                   "3 - Вывод всех слов по очереди.\n" +
                                   "4 - Вывод слов блоками\n" +
+                                  "5 - Вывод определенного блока слов\n" +
                                   "exit - выйти из программы");
 
                 switch (Console.ReadLine())
@@ -62,7 +55,10 @@ namespace WordsTeacher
                         int wordsInBlok = Convert.ToInt32(Console.ReadLine());
                         Console.Write("\nСколько раз повторять блок: ");
                         int RepeatBlok = Convert.ToInt32(Console.ReadLine());
-                        teachWords.LearnBloks(wordsInBlok, RepeatBlok);
+                        teachWords.LearnBlocks(wordsInBlok, RepeatBlok);
+                        break;
+                    case "5":
+                        teachWords.ShowGivenBlock();
                         break;
 
                     case "exit":
