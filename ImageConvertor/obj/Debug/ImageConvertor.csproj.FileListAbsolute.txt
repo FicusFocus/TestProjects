@@ -1,0 +1,7 @@
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\bin\Debug\ImageConvertor.exe.config
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\bin\Debug\ImageConvertor.exe
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\bin\Debug\ImageConvertor.pdb
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\obj\Debug\ImageConvertor.csprojAssemblyReference.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\obj\Debug\ImageConvertor.csproj.CoreCompileInputs.cache
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\obj\Debug\ImageConvertor.exe
+D:\DoNotComeIn\projects\GitHub Repositories\TestProjects\ImageConvertor\obj\Debug\ImageConvertor.pdb
